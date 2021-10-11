@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icone.png">
+  
+  <title>Porcentagem | LuizEdulima</title>
+
+  <!-- Arquivo externo css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Fonts awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+</head>
+<body>
+  <div class="box">
+    <h1 class="marca">
+      <p>S P L I</p>
+      <p>T T E R</p>
+    </h1>
+
+    <div class="quadro">
+      <div class="box">
+        <div class="divisao">
+          <p><b>Valor</b></p>
+
+          <input type="number" name="valor" placeholder="$" class="entrada">
+
+          <div class="aviso"></div>
+
+          <p>
+            <b>Selecione %</b>
+          </p>
+
+          
+          <button onclick="calcular(5, this)" class="botoes">5%</button>
+            
+          <button onclick="calcular(10, this)" class="botoes">10%</button>
+            
+          <button onclick="calcular(15, this)" class="botoes">15%</button>
+
+          <button onclick="calcular(25, this)" class="botoes">25%</button>
+            
+          <button onclick="calcular(50, this)" class="botoes">50%</button>
+            
+          <input type="number" name="porcentagem" class="value" placeholder="Valor %">
+
+          <button class="github" onclick="meuGithub()"><i class="fab fa-github-square"></i></button>
+        </div>
+        <div class="divisao display">
+          <p>Porcentagem: <b class="porcent">R$ 0.00</b></p>
+          <p class="total">Total: <b class="result">R$ 0.00</b></p>
+
+          <button class="reset" onclick="resetar()">RESET</button>
+        </div>
+
+        <footer>
+          <p><i class="fas fa-copyright"></i>&nbsp;&nbsp;Criado por Luiz Eduardo de Lima</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
